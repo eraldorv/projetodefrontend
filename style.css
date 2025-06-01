@@ -25,9 +25,29 @@ p {
     font-size: 20px;
 }
 
+
+.ContHome {
+    color: #2b1110;
+    font-family: "Lilita One", sans-serif;
+    position: flex;
+    left: 10px;
+    width: 100%;
+    text-align: right;
+    z-index: 2;
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        border: 2px hidden;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #FFFFFF;
+    }
+}
+
 .HomeImagens {
     display: flex;
-    padding: 150px 0 0 200px;
+    padding: 0 0 0 200px;
     margin-top: 32px;
 }
 
