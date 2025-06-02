@@ -27,15 +27,29 @@ p {
 
 
 .ContHome {
-    color: #2b1110;
     font-family: "Lilita One", sans-serif;
     position: flex;
-    left: 10px;
+    left: 5px;
     width: 100%;
     text-align: right;
     z-index: 2;
+    h1 {
+        color: #ffffff;
+        font-size: 50px;
+        text-shadow: 6px 0px 0px #be130d;
+    }
+    img {
+        width: 50px;
+        position: flex;
+        padding: 0 0 11px 0;
+        border: 2px hidden;
+        border-radius: 20px;
+        display: inline-block;
+        background-color: #FFFFFF;
+
+    }
     h3 {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Unna";
         font-size: 17px;
         border: 2px hidden;
         border-radius: 20px;
@@ -47,12 +61,11 @@ p {
 
 .HomeImagens {
     display: flex;
-    padding: 0 0 0 200px;
+    padding: 0 0 0 125px;
     margin-top: 32px;
 }
 
 .HomeImagens img {
-    border-radius: 5px;
-    width: 380px;
-    object-fit: cover;
+    width: 400px;
+    object-fit: stretch;
 }
