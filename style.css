@@ -1,71 +1,141 @@
-.HeaderHome {
-
-    text-align: center;
-    img {
-        width: 330px;
-        border-radius: 70px;
-        padding: 24px;
-    }
-    
-    background-color: #ED3630;
-    color: rgb(227, 233, 255);
-    border-radius: 20px;
-
-    p {  
-        font-size: 20px;
-    }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color:#FFDCA4;
+  background-color: #FFDCA4;
+}
+
+.HeaderHome {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  transition: top 0.3s ease;
+  z-index: 1000;
+  background-color: #ED3630;
+  color: rgb(227, 233, 255);
+}
+
+.HeaderHome img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.HeaderHome img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.HeaderHome:hover {
+  background-color: #c71432;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-
-.ContHome {
-    font-family: "Lilita One", sans-serif;
-    position: flex;
-    left: 5px;
-    width: 100%;
-    text-align: right;
-    z-index: 2;
-    h1 {
-        color: #ffffff;
-        font-size: 50px;
-        text-shadow: 6px 0px 0px #be130d;
-    }
-    img {
-        width: 50px;
-        position: flex;
-        padding: 0 0 11px 0;
-        border: 2px hidden;
-        border-radius: 20px;
-        display: inline-block;
-        background-color: #FFFFFF;
-
-    }
-    h3 {
-        font-family: "Unna";
-        font-size: 17px;
-        border: 2px hidden;
-        border-radius: 20px;
-        display: inline-block;
-        padding: 8px 16px;
-        background-color: #FFFFFF;
-    }
+.scroller-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-.HomeImagens {
-    display: flex;
-    padding: 0 0 0 125px;
-    margin-top: 32px;
+.scroller {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  margin: 0 3rem;
 }
 
-.HomeImagens img {
-    width: 400px;
-    object-fit: stretch;
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 250px;
+  border-radius: 7px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.AvaliadosHome h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  padding: 2rem;
+  background-color: rgba(189, 16, 16, 0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ed3630;
+  color: white;
+  font-size: 10px;
+}
+
+footer a {
+  color: #ffdca4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .scroller {
+    margin: 0 1rem;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .AvaliadosHome h2 {
+    font-size: 24px;
+    padding: 1rem;
+  }
+
+  .HeaderHome img {
+    max-width: 200px;
+  }
 }

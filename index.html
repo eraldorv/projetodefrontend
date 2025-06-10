@@ -1,40 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rota dos Sabores</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rota dos Sabores</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <div class="HeaderHome">
-        <img src="rotalogo.png" alt="Logo do Rota dos Sabores">
-    </div>
+  <div class="HeaderHome">
+    <img src="img/rotalogo.png" alt="Logo">
+  </div>
 
-    <div class="ContHome">
-        <h1> COCO BAMBU </h1>
-        <span class="contbox">
-        <h3>“Aquela famosa frase de que 'um bom atendimento faz toda a diferença' é a pura verdade! O <br> 
-            José, por exemplo, sabe exatamente como fazer um atendimento de excelência e, de <br>
-            verdade, consegue personalizar para cada tipo de cliente. Imagina se eu tivesse falado que <br> 
-            estava comemorando 7 anos de casados 😅 Sobre o restaurante...”</h3>
-            <img src="flaticon.png">
-        </span>
+  <section class="AvaliadosHome" aria-label="Lista de restaurantes recomendados">
+    <h2>Valem a pena checar:</h2>
+    <div class="scroller-container">
+      <div class="scroller" id="scroller">
+        <div class="card">
+          <img src="img/coco-bambu.webp" alt="Coco Bambu">
+          <h3>Coco Bambu</h3>
+          <p>⭐ 4.9</p>
         </div>
-
-    <div class="HomeImagens">
-        <img src="IMGL1395.webp" alt="coco bambu 1">
-        <img src="IMGL1383.webp" alt="coco bambu 2">
-        <img src="IMGL1453.webp" alt="coco bambu 3">
+        <div class="card">
+          <img src="img/chica-pitanga.jpg" alt="Chica Pitanga">
+          <h3>Chica Pitanga</h3>
+          <p>⭐ 4.8</p>
+        </div>
+        <div class="card">
+          <img src="img/sal-e-brasa.jpg" alt="Sal e Brasa">
+          <h3>Sal e Brasa</h3>
+          <p>⭐ 4.9</p>
+        </div>
+        <div class="card">
+          <img src="img/bode-do-no.jpg" alt="Bode do Nô">
+          <h3>Bode do Nô</h3>
+          <p>⭐ 4.7</p>
+        </div>
+        <div class="card">
+          <img src="img/restaurante-leite.jpg" alt="Restaurante Leite">
+          <h3>Restaurante Leite</h3>
+          <p>⭐ 4.6</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <script>
+const scroller = document.getElementById('scroller');
+
+// loop
+const cloneCards = () => {
+  const cards = scroller.querySelectorAll('.card');
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    scroller.appendChild(clone);
+  });
+};
+
+cloneCards();
+
+// scroll mouse horinzontal
+scroller.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();
+    scroller.scrollBy({
+      left: e.deltaY < 0 ? -100 : 100,
+    });
+  }
+}, { passive: false });
+
+if (window.innerWidth > 768) {
+  cloneCards(); // só clona se tela for maior
+}
+
+  </script>
+
+  <footer>
+    <p>Rota dos Sabores &copy; 2025</p>
+    <p>Desenvolvido por <a href="#">eraldorv</a></p>
+  </footer>
+
 </body>
 </html>
