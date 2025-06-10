@@ -69,6 +69,7 @@ p {
   text-align: center;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-style: italic;
 }
 
 .card img {
@@ -87,7 +88,7 @@ p {
 .card p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: #656942;
 }
 
 .card:hover {
@@ -95,31 +96,30 @@ p {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.AvaliadosHome h2 {
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.BemAvaliados h2 {
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
   padding: 2rem;
-  background-color: rgba(189, 16, 16, 0.15);
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #ed3630;
-  color: white;
-  font-size: 10px;
+.AdcRecentemente h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  padding: 2rem;
 }
 
-footer a {
-  color: #ffdca4;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
 
 @media (max-width: 768px) {
   .scroller {

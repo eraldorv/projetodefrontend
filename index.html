@@ -15,32 +15,42 @@
     <img src="img/rotalogo.png" alt="Logo">
   </div>
 
-  <section class="AvaliadosHome" aria-label="Lista de restaurantes recomendados">
+  <section class="BemAvaliados" aria-label="Lista de restaurantes recomendados">
     <h2>Valem a pena checar:</h2>
     <div class="scroller-container">
-      <div class="scroller" id="scroller">
+      <div class="scroller" id="scroller1">
         <div class="card">
+          <a href="inforestaurante.html?id=coco-bambu" class="card-link">
           <img src="img/coco-bambu.webp" alt="Coco Bambu">
+          </a>
           <h3>Coco Bambu</h3>
           <p>⭐ 4.9</p>
         </div>
         <div class="card">
+          <a href="inforestaurante.html?id=chica-pitanga" class="card-link">
           <img src="img/chica-pitanga.jpg" alt="Chica Pitanga">
           <h3>Chica Pitanga</h3>
+          </a>
           <p>⭐ 4.8</p>
         </div>
         <div class="card">
+          <a href="inforestaurante.html?id=sal-e-brasa" class="card-link">
           <img src="img/sal-e-brasa.jpg" alt="Sal e Brasa">
+          </a>
           <h3>Sal e Brasa</h3>
           <p>⭐ 4.9</p>
         </div>
         <div class="card">
+          <a href="inforestaurante.html?id=bode-do-no" class="card-link">
           <img src="img/bode-do-no.jpg" alt="Bode do Nô">
+          </a>
           <h3>Bode do Nô</h3>
           <p>⭐ 4.7</p>
         </div>
         <div class="card">
+          <a href="inforestaurante.html?id=restaurante-leite" class="card-link">
           <img src="img/restaurante-leite.jpg" alt="Restaurante Leite">
+          </a>
           <h3>Restaurante Leite</h3>
           <p>⭐ 4.6</p>
         </div>
@@ -48,40 +58,101 @@
     </div>
   </section>
 
+  <section class="AdcRecentemente" aria-label="Lista de restaurantes adicionados recentemente">
+    <h2>Adicionados Recentemente:</h2>
+    <div class="scroller-container">
+      <div class="scroller" id="scroller2">
+        <div class="card">
+          <a href="inforestaurante.html?id=casa-da-parrilla" class="card-link">
+          <img src="img/casa-da-parrilla.jpg" alt="Casa da Parrilla">
+          <h3>Casa da Parrilla</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="inforestaurante.html?id=geracao-burguer" class="card-link">
+          <img src="img/geracao-burguer.avif" alt="Geração Burguer">
+          <h3>Geração Burguer</h3>
+        </a>
+        </div>
+        <div class="card">
+          <a href="inforestaurante.html?id=la-brasa" class="card-link">
+          <img src="img/la-brasa.webp" alt="La Brasa">
+          <h3>La Brasa</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="inforestaurante.html?id=mafalda-hamburgueria" class="card-link">
+          <img src="img/mafalda-hamburgueria.png" alt="Mafalda Hamburgueria">
+          <h3>Mafalda Hamburgueria</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="inforestaurante.html?id=magalhaes-pizza" class="card-link">
+          <img src="img/magalhaes-pizza.webp" alt="Magalhães Pizza">
+          <h3>Magalhães Pizza</h3>
+          </a>
+          </div>
+          <div class="card">
+            <a href="inforestaurante.html?id=lupi-pizzeria" class="card-link">
+            <img src="img/lupi-pizzeria.jpg" alt="Lupi Pizzeria">
+            <h3>Lupi Pizzeria</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="inforestaurante.html?id=1121-forneria" class="card-link">
+          <img src="img/1121-forneria.jpg" alt="1121 Forneria">
+          <h3>1121 Forneriaa</h3>
+          </a>
+        </div>
+    </div>
+  </section>
+
   <script>
-const scroller = document.getElementById('scroller');
-
-// loop
-const cloneCards = () => {
-  const cards = scroller.querySelectorAll('.card');
-  cards.forEach(card => {
-    const clone = card.cloneNode(true);
-    scroller.appendChild(clone);
-  });
-};
-
-cloneCards();
-
-// scroll mouse horinzontal
-scroller.addEventListener('wheel', (e) => {
-  if (e.deltaY !== 0) {
-    e.preventDefault();
-    scroller.scrollBy({
-      left: e.deltaY < 0 ? -100 : 100,
-    });
-  }
-}, { passive: false });
-
-if (window.innerWidth > 768) {
-  cloneCards(); // só clona se tela for maior
-}
-
-  </script>
-
-  <footer>
-    <p>Rota dos Sabores &copy; 2025</p>
-    <p>Desenvolvido por <a href="#">eraldorv</a></p>
-  </footer>
+    function setupHorizontalScroll(scrollerId) {
+      const scroller = document.getElementById(scrollerId);
+      if (!scroller) return;
+    
+      // evita clonagem repetida
+      let isCloned = false;
+    
+      function cloneCards() {
+        if (isCloned) return;
+        const cards = Array.from(scroller.querySelectorAll('.card'));
+        cards.forEach(card => {
+          const clone = card.cloneNode(true);
+          scroller.appendChild(clone);
+        });
+        isCloned = true;
+      }
+    
+      // aplica scroll
+      scroller.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+          e.preventDefault();
+          scroller.scrollBy({
+            left: e.deltaY < 0 ? -100 : 100,
+            behavior: 'smooth'
+          });
+        }
+      }, { passive: false });
+    
+      // clonar os cards
+      if (window.innerWidth > 768) {
+        cloneCards();
+      }
+    
+      // redimensionar
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && !isCloned) {
+          cloneCards();
+        }
+      });
+    }
+    
+    // gira
+    setupHorizontalScroll('scroller1');
+    setupHorizontalScroll('scroller2');
+    </script>
 
 </body>
 </html>
