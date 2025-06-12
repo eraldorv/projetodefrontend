@@ -3,105 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rota dos Sabores</title>
 </head>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Micro+5&display=swap" rel="stylesheet">
+
 <body>
-    <h1 id="restaurante-nome"></h1>
+
+   <div class="HeaderHome">
+    <img src="img/rotalogo.png" alt="Logo" />
+  </div>
+
+<section class="ConteudoRestaurante" aria-label="Detalhes do restaurante">
+    <div class="linha">
+    <h3 id="restaurante-nome"></h3>
+    <h2 id="restaurante-nota"></h2>
+    </div>
     <img id="restaurante-imagem" alt="">
-    <p id="restaurante-nota"></p>
     <p id="restaurante-descricao"></p>
     <a href="index.html">ei clique aqui para voltar</a>
-
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const restauranteId = params.get('id');
-      
-        const restaurantes = {
-          "coco-bambu": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "chica-pitanga": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "sal-e-brasa": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "bode-do-no": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "restaurante-leite": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "casa-da-parrilla": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "geracao-burguer": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "la-brasa": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "mafalda-hamburgueria": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "magalhaes-pizza": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "lupi-pizzeria": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-          "1121-forneria": {
-            nome: "AQUI JAZ O NOME DO RESTAURANTE...",
-            nota: "ESSA E A NOTA DO RESTAURANTE",
-            descricao: "ESSA E A DESCRIÇÃO DO RESTAURANTE...",
-            imagem: "https://media.tenor.com/p19XPWcukM4AAAAM/lancer-deltarune.gif"
-          },
-        };
-
-        const dados = restaurantes[restauranteId];
-        if (dados) {
-          document.getElementById("restaurante-nome").textContent = dados.nome;
-          document.getElementById("restaurante-nota").textContent = "⭐ " + dados.nota;
-          document.getElementById("restaurante-descricao").textContent = dados.descricao;
-          document.getElementById("restaurante-imagem").src = dados.imagem;
-        } else {
-          // caso o restaurante não seja encontrado
-          document.body.innerHTML = "<h2>Restaurante não encontrado 😢</h2>";
-        }
-      </script>
-      
+</section>
+  
+    <script src="preenchinfo.js"></script>
 </body>
 </html>

@@ -30,9 +30,51 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.HeaderHome:hover {
-  background-color: #c71432;
+.Navegacao {
+  background-color: #ED3630;
+  border-bottom: 1px solid #c71432;
+  padding: 10px 20px;
 }
+
+.Navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navegacao li {
+  font-family: 'Unna', serif;
+  font-size: 16px;
+}
+
+.Navegacao a {
+  text-decoration: none;
+  color: #FFDCA4;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.Navegacao a:hover {
+  background-color: #c71432;
+  color: #ffa4a4;
+}
+
+.Navegacao .login a {
+  background-color: #d11e18;
+  color: #FFDCA4;
+}
+
+.Navegacao .login a:hover {
+  background-color: #c71432;
+  color: #ffa4a4;
+}
+
 
 p {
   font-size: 20px;
@@ -69,7 +111,6 @@ p {
   text-align: center;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-style: italic;
 }
 
 .card img {
@@ -104,22 +145,18 @@ p {
   cursor: pointer;
 }
 
-.BemAvaliados h2 {
+.card a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.ConteudoTexto h2 {
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
   padding: 2rem;
 }
-
-.AdcRecentemente h2 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  font-style: normal;
-  padding: 2rem;
-}
-
 
 @media (max-width: 768px) {
   .scroller {
@@ -138,4 +175,54 @@ p {
   .HeaderHome img {
     max-width: 200px;
   }
+}
+.tree { 
+  text-align: center;
+}
+.tree img{
+  padding: 120px 0 0 0;
+  width: 200px;
+}
+
+.ConteudoRestaurante h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.ConteudoRestaurante p {
+ font-family: "Bona Nova", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.linha h3 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  padding: 14px 0 0 124px;
+}
+
+.linha p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.ConteudoRestaurante img {
+  width: 50%;
+  height: auto;
+  padding: 0 1rem;
 }
