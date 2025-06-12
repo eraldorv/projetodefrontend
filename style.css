@@ -75,6 +75,15 @@ body {
   color: #ffa4a4;
 }
 
+.Navegacao .Home a {
+  background-color: #d11e18;
+  color: #FFDCA4;
+}
+
+.Navegacao .Home a:hover {
+  background-color: #c71432;
+  color: #ffa4a4;
+}
 
 p {
   font-size: 20px;
@@ -200,6 +209,13 @@ p {
   padding: 0 1rem;
 }
 
+.ConteudoRestaurante img {
+  width: 520px;
+  height: 400px;
+  border-radius: 4%;
+  padding: 0 1rem;
+  object-fit: stretch;
+}
 .linha {
   display: flex;
   align-items: center;
@@ -219,10 +235,4 @@ p {
   font-weight: 400;
   font-size: 20px;
   font-style: italic;
-}
-
-.ConteudoRestaurante img {
-  width: 50%;
-  height: auto;
-  padding: 0 1rem;
 }
