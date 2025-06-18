@@ -201,17 +201,17 @@ p {
 }
 
 .ConteudoRestaurante p {
- font-family: "Bona Nova", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
+
+  font-weight: 300;
+  font-size: 20px;
   line-height: 1.4;
   max-width: 100%;
   padding: 0 1rem;
 }
 
 .ConteudoRestaurante img {
-  width: 520px;
-  height: 400px;
+  width: 720px;
+  height: 500px;
   border-radius: 4%;
   padding: 0 1rem;
   object-fit: stretch;
@@ -227,7 +227,7 @@ p {
   font-weight: 400;
   font-size: 40px;
   font-style: normal;
-  padding: 14px 0 0 124px;
+  padding: 10px 0 0 115px;
 }
 
 .linha p {
@@ -235,4 +235,32 @@ p {
   font-weight: 400;
   font-size: 20px;
   font-style: italic;
+}
+
+.scroller-container-img {
+  overflow: auto;
+  white-space: nowrap;
+  width: 700px;
+}
+
+.scroller-img::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller-img {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.card-r {
+  scroll-snap-align: start;
+  width: 512px;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.scroller-img img {
+  height: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }

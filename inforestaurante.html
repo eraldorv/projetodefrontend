@@ -26,15 +26,37 @@
     </ul>
   </nav>
 
-<section class="ConteudoRestaurante" aria-label="Detalhes do restaurante">
+  <section class="ConteudoRestaurante" aria-label="Detalhes do restaurante">
     <div class="linha">
-    <h3 id="restaurante-nome"></h3>
-    <h2 id="restaurante-nota"></h2>
+      <h3 id="restaurante-nome"></h3>
+      <h2 id="restaurante-nota"></h2>
     </div>
-    <img id="restaurante-imagem" alt="">
+    <div class="card-r" data-id="imagem-do-resta">
+      <div class="scroller-container-img">
+        <div class="scroller-img" id="scroller3">
+          <img id="restaurante-imagem" src="imagem1.jpg" alt="Imagem 1">
+          <img id="restaurante-imagem2" src="imagem2.jpg" alt="Imagem 2">
+        </div>
+      </div>
+    </div>
     <p id="restaurante-descricao"></p>
-</section>
-  
+  </section>
+
+<script>
+container.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault();
+    container.scrollBy({
+      left: e.deltaY < 0 ? -100 : 100,
+      behavior: 'smooth',
+    });
+  }
+}, { passive: false });
+
+
+setupHorizontalScroll('scroller3');
+</script>
+
     <script src="preenchinfo.js"></script>
 </body>
 </html>

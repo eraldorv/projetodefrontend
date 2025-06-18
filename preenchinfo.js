@@ -8,7 +8,8 @@ const restaurantes = {
     descricao: `Marisqueira com pratos generosos e ambiente elegante. Ideal para ocasiões especiais e jantares em grupo.
 Oferece pratos fartos, com destaque para frutos do mar e moquecas. Ambiente sofisticado com atendimento de qualidade.
 Possui espaço kids, carta de vinhos e áreas climatizadas.`,
-    imagem: "img/coco-bambu.jpg",
+    imagem: "img/restaurantes/Coco Bambu/coco-bambu.png",
+    imagem2: "img/restaurantes/Coco Bambu/coco-bambu2.png",
     endereco: "Av. Gov. Agamenon Magalhães, 2100 - Derby, Recife - PE"
   },
   "chica-pitanga": {
@@ -108,6 +109,7 @@ if (dados) {
   document.getElementById("restaurante-nota").textContent = "⭐ " + dados.nota;
   document.getElementById("restaurante-descricao").textContent = dados.descricao;
   document.getElementById("restaurante-imagem").src = dados.imagem;
+  document.getElementById("restaurante-imagem2").src = dados.imagem2;
   document.getElementById("restaurante-endereco").textContent = dados.endereco;
 } else {
   document.body.innerHTML = "<h2>Restaurante não encontrado 😢</h2>";
