@@ -42,21 +42,6 @@
     <p id="restaurante-descricao"></p>
   </section>
 
-<script>
-container.addEventListener('wheel', (e) => {
-  if (e.deltaY !== 0) {
-    e.preventDefault();
-    container.scrollBy({
-      left: e.deltaY < 0 ? -100 : 100,
-      behavior: 'smooth',
-    });
-  }
-}, { passive: false });
-
-
-setupHorizontalScroll('scroller3');
-</script>
-
     <script src="preenchinfo.js"></script>
 </body>
 </html>

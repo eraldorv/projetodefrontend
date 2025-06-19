@@ -212,7 +212,7 @@ p {
 .ConteudoRestaurante img {
   width: 720px;
   height: 500px;
-  border-radius: 4%;
+  border-radius: 3%;
   padding: 0 1rem;
   object-fit: stretch;
 }
@@ -237,30 +237,19 @@ p {
   font-style: italic;
 }
 
-.scroller-container-img {
-  overflow: auto;
-  white-space: nowrap;
-  width: 700px;
-}
-
-.scroller-img::-webkit-scrollbar {
-  display: none;
+scroller-container-img {
+  overflow: hidden; 
+  width: 100%;     
 }
 
 .scroller-img {
-  display: inline-flex;
-  gap: 5px;
-}
-
-.card-r {
-  scroll-snap-align: start;
-  width: 512px;
-  border-radius: 7px;
-  padding: 1rem;
+  display: flex;
+  scroll-behavior: smooth;
 }
 
 .scroller-img img {
-  height: 500px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 610px; 
+  pointer-events: none; 
+  user-select: none;
 }
