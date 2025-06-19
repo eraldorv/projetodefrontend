@@ -116,7 +116,7 @@ p {
   width: 250px;
   border-radius: 7px;
   background-color: #f8f8f8;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -154,7 +154,7 @@ p {
   cursor: pointer;
 }
 
-.card a{
+.card a {
   text-decoration: none;
   color: inherit;
 }
@@ -185,10 +185,12 @@ p {
     max-width: 200px;
   }
 }
-.tree { 
+
+.tree {
   text-align: center;
 }
-.tree img{
+
+.tree img {
   padding: 120px 0 0 0;
   width: 200px;
 }
@@ -216,10 +218,11 @@ p {
   padding: 0 1rem;
   object-fit: stretch;
 }
+
 .linha {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 .linha h3 {
@@ -238,8 +241,8 @@ p {
 }
 
 scroller-container-img {
-  overflow: hidden; 
-  width: 100%;     
+  overflow: hidden;
+  width: 100%;
 }
 
 .scroller-img {
@@ -249,7 +252,49 @@ scroller-container-img {
 
 .scroller-img img {
   width: 100%;
-  max-width: 610px; 
-  pointer-events: none; 
+  max-width: 610px;
+  pointer-events: none;
   user-select: none;
+}
+
+.login-html {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 400px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ED3630;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.login-container img {
+  width: 70%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+.login-container h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFDCA4;
+  margin-bottom: 1rem;
+}
+
+.mensagemErro {
+  color: #FFDCA4;
+  font-family: "Unna", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
 }
