@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFDCA4;
+}
+
+.HeaderHome {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  transition: top 0.3s ease;
+  z-index: 1000;
+  background-color: #ED3630;
+  color: rgb(227, 233, 255);
+}
+
+.HeaderHome img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.HeaderHome img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Navegacao {
+  background-color: #ED3630;
+  border-bottom: 1px solid #c71432;
+  padding: 10px 20px;
+}
+
+.Navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Navegacao li {
+  font-family: 'Unna', serif;
+  font-size: 16px;
+}
+
+.Navegacao a {
+  text-decoration: none;
+  color: #FFDCA4;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.Navegacao a:hover {
+  background-color: #c71432;
+  color: #ffa4a4;
+}
+
+.Navegacao .login a {
+  background-color: #d11e18;
+  color: #FFDCA4;
+}
+
+.Navegacao .login a:hover {
+  background-color: #c71432;
+  color: #ffa4a4;
+}
+
+.Navegacao .Home a {
+  background-color: #d11e18;
+  color: #FFDCA4;
+}
+
+.Navegacao .Home a:hover {
+  background-color: #c71432;
+  color: #ffa4a4;
+}
+
+p {
+  font-size: 20px;
+}
+
+.scroller-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.scroller {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  margin: 0 3rem;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 250px;
+  border-radius: 7px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #656942;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ConteudoTexto h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .scroller {
+    margin: 0 1rem;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .AvaliadosHome h2 {
+    font-size: 24px;
+    padding: 1rem;
+  }
+
+  .HeaderHome img {
+    max-width: 200px;
+  }
+}
+
+.tree {
+  text-align: center;
+}
+
+.tree img {
+  padding: 120px 0 0 0;
+  width: 200px;
+}
+
+.ConteudoRestaurante h1 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.ConteudoRestaurante p {
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.ConteudoRestaurante img {
+  width: 720px;
+  height: 500px;
+  border-radius: 3%;
+  padding: 0 1rem;
+  object-fit: stretch;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linha h3 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+  padding: 10px 0 0 115px;
+}
+
+.linha p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+}
+
+scroller-container-img {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroller-img {
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.scroller-img img {
+  width: 100%;
+  max-width: 610px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.login-html {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 400px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ED3630;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.login-container img {
+  width: 70%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+.login-container h2 {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFDCA4;
+  margin-bottom: 1rem;
+}
+
+.mensagemErro {
+  color: #FFDCA4;
+  font-family: "Unna", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}

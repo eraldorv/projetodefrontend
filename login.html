@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota dos Sabores</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Micro+5&display=swap"
+    rel="stylesheet">
+
+<body>
+
+ <div class="login-html">
+  <div class="login-container">
+    <img src="img/rotalogo.png" alt="Logo do site">
+    <h2>Faça o seu login de usuário para continuar no site.</h2>
+
+    <input type="text" id="usuario" placeholder="Usuário" />
+    <input type="password" id="senha" placeholder="Senha" />
+    <button onclick="verificarLogin()">Entrar</button>
+
+    <p class="mensagemErro" id="mensagem-erro">
+      Usuário ou senha incorretos.
+    </p>
+  </div>
+</div>
+
+<script>
+  function verificarLogin() {
+    const usuarioCorreto = "admin";
+    const senhaCorreta = "1234";
+
+    const usuarioDigitado = document.getElementById("usuario").value;
+    const senhaDigitada = document.getElementById("senha").value;
+    const mensagemErro = document.getElementById("mensagem-erro");
+
+    if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
+      mensagemErro.style.display = "none";
+      alert("Login bem-sucedido!");
+      window.location.href = "index.html";
+    } else {
+      mensagemErro.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
