@@ -2,54 +2,52 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rota dos Sabores</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Micro+5&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota dos Sabores - Detalhes do Restaurante</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Micro+5&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="HeaderHome">
-    <img src="img/rotalogo.png" alt="Logo" />
-  </div>
-
-  <nav class="Navegacao" aria-label="Menu de navegação">
-    <ul>
-      <li class="Home"><a href="index.html">Página Inicial</a></li>
-      <li><a href="#">Pizzarias</a></li>
-      <li><a href="#">Hamburguerias</a></li>
-      <li><a href="#">Frutos do Mar</a></li>
-      <li class="login"><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
-
-  <section class="ConteudoRestaurante" aria-label="Detalhes do restaurante">
-
-    <div class="linha">
-      <h3 id="restaurante-nome"></h3>
-      <h2 id="restaurante-nota"></h2>
+    <div class="HeaderHome">
+        <img src="img/rotalogo.png" alt="Logo Rota dos Sabores" />
     </div>
 
-    <div class="card-r" data-id="imagem-do-resta">
-      <div class="scroller-container-img">
-        <div class="scroller-img" id="scroller3">
-          <img id="restaurante-imagem1" src="" alt="Imagem 1">
-          <img id="restaurante-imagem2" src="" alt="Imagem 2">
+    <nav class="Navegacao" aria-label="Menu de navegação">
+        <ul>
+            <li class="Home"><a href="index.html">Página Inicial</a></li>
+            <li><a href="#">Pizzarias</a></li>
+            <li><a href="#">Hamburguerias</a></li>
+            <li><a href="#">Frutos do Mar</a></li>
+        </ul>
+    </nav>
+
+    <section class="ConteudoRestaurante" aria-label="Detalhes do restaurante">
+
+        <div class="linha">
+            <img id="restaurante-imagemicone" src="" alt="Ícone do Restaurante" class="icone-restaurante">
+            <h3 id="restaurante-nome"></h3>
+            <span id="restaurante-nota"></span>
         </div>
-      </div>
-    </div>
 
-    <p id="restaurante-descricao"></p>
-    <p><strong>Endereço:</strong> <span id="restaurante-endereco"></span></p>
-  </section>
+        <div class="galeria-imagens">
+            <img id="restaurante-imagem1" src="" alt="Imagem 1 do Restaurante">
+            <img id="restaurante-imagem2" src="" alt="Imagem 2 do Restaurante">
+            </div>
 
-  <script src="preenchinfo.js"></script>
+        <p id="restaurante-descricao"></p>
+
+        <p><strong>Endereço:</strong> <span id="restaurante-endereco"></span></p>
+
+    </section>
+
+    <script src="preenchinfo.js"></script>
 </body>
 
 </html>

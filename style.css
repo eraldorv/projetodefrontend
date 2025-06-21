@@ -195,106 +195,118 @@ p {
   width: 200px;
 }
 
+.ConteudoRestaurante {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
 .ConteudoRestaurante h1 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  font-style: normal;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
 }
 
 .ConteudoRestaurante p {
-
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.4;
-  max-width: 100%;
-  padding: 0 1rem;
-}
-
-.ConteudoRestaurante img {
-  width: 720px;
-  height: 500px;
-  border-radius: 3%;
-  padding: 0 1rem;
-  object-fit: stretch;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
 .linha {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 10px 0; 
 }
 
 .linha h3 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  font-style: normal;
-  padding: 10px 0 0 115px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
-.linha p {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: italic;
+.linha span { 
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
 }
 
-scroller-container-img {
-  overflow: hidden;
-  width: 100%;
+
+.ConteudoRestaurante {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
 }
 
-.scroller-img {
-  display: flex;
-  scroll-behavior: smooth;
+.ConteudoRestaurante h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
 }
 
-.scroller-img img {
-  width: 100%;
-  max-width: 610px;
-  pointer-events: none;
-  user-select: none;
+.ConteudoRestaurante p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 100%;
+    padding: 0 1rem;
+    text-align: center; 
 }
 
-.login-html {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 0;
 }
 
-.login-container {
-  width: 400px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ED3630;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-align: center;
+.icone-restaurante {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
-.login-container img {
-  width: 70%;
-  height: auto;
-  border-radius: 30px;
-  margin-bottom: 1rem;
+.linha h3 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
-.login-container h2 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  color: #FFDCA4;
-  margin-bottom: 1rem;
+.linha span {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
 }
 
-.mensagemErro {
-  color: #FFDCA4;
-  font-family: "Unna", sans-serif;
-  font-size: 14px;
-  margin-top: 10px;
+.galeria-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.galeria-imagens img {
+    flex: 1 1 calc(50% - 7.5px);
+    max-width: 660px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 3%;
 }
