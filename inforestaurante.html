@@ -22,32 +22,32 @@
     <nav class="Navegacao" aria-label="Menu de navegação">
         <ul>
             <li class="Home"><a href="index.html">Página Inicial</a></li>
-            <li><a href="#">Pizzarias</a></li>
+            <li><a href="pizzarias.html">Pizzarias</a></li>
             <li><a href="#">Hamburguerias</a></li>
             <li><a href="#">Frutos do Mar</a></li>
         </ul>
     </nav>
 
     <section class="ConteudoRestaurante" aria-label="Detalhes do restaurante">
+  <div class="linha">
+    <img id="restaurante-imagemicone" src="" alt="Ícone do Restaurante" class="icone-restaurante">
+    <h3 id="restaurante-nome"></h3>
+    <span id="restaurante-nota"></span>
+  </div>
 
-        <div class="linha">
-            <img id="restaurante-imagemicone" src="" alt="Ícone do Restaurante" class="icone-restaurante">
-            <h3 id="restaurante-nome"></h3>
-            <span id="restaurante-nota"></span>
-        </div>
+  <div class="galeria-imagens">
+    <img id="restaurante-imagem1" src="" alt="Imagem 1 do Restaurante">
+    <img id="restaurante-imagem2" src="" alt="Imagem 2 do Restaurante">
+  </div>
 
-        <div class="galeria-imagens">
-            <img id="restaurante-imagem1" src="" alt="Imagem 1 do Restaurante">
-            <img id="restaurante-imagem2" src="" alt="Imagem 2 do Restaurante">
-            </div>
+  <p id="restaurante-descricao"></p>
 
-        <p id="restaurante-descricao"></p>
+  <p><strong>Endereço:</strong>
+    <a id="restaurante-endereco" href="#" target="_blank" rel="noopener noreferrer"></a>
+  </p>
+</section>
 
-        <p><strong>Endereço:</strong> <span id="restaurante-endereco"></span></p>
-
-    </section>
-
-    <script src="preenchinfo.js"></script>
+    <script src="javascript/preenchinfo.js"></script>
 </body>
 
 </html>
