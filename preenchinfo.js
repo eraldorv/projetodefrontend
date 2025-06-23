@@ -140,9 +140,9 @@ Localizada em Poço da Panela, ambiente descolado.`,
     descricao: `Hambúrgueres artesanais com ingredientes frescos e molhos especiais.
 Ambiente jovem e familiar, ideal para lanche e almoço descontraído.
 Unidade Boa Viagem na Av. Domingos Ferreira.`,
-    imagemicone: "img/restaurantes/Laca Burguer/laca burguer.png",
-    imagem1: "img/restaurantes/Laca Burguer/laca burguer1.png",
-    imagem2: "img/restaurantes/Laca Burguer/laca burguer2.png",
+    imagemicone: "img/restaurantes/Laca Burguer/laça burguer.png",
+    imagem1: "img/restaurantes/Laca Burguer/laçaburguer1.png",
+    imagem2: "img/restaurantes/Laca Burguer/laçaburguer2.png",
     endereco: "Av. Eng. Domingos Ferreira, 3742 - Boa Viagem, Recife - PE, 51030-020" 
   },
   "232-burguer": {
@@ -152,8 +152,8 @@ Unidade Boa Viagem na Av. Domingos Ferreira.`,
 Oferece combos, delivery e retirada no local.
 Instalada na Torre, próximo ao centro histórico.`,
     imagemicone: "img/restaurantes/232 Burguer/232 burguer.png",
-    imagem1: "img/restaurantes/232 Burguer/232 burguer1.png",
-    imagem2: "img/restaurantes/232 Burguer/232 burguer2.png",
+    imagem1: "img/restaurantes/232 Burguer/232burguer1.png",
+    imagem2: "img/restaurantes/232 Burguer/232burguer2.png",
     endereco: "R. Ascendino Neves, 29 - Torre, Recife - PE, 50710-070" 
   },
   "visca-burguer": {
@@ -163,19 +163,19 @@ Instalada na Torre, próximo ao centro histórico.`,
 Serve burgers saborosos e petiscos em ambiente descontraído.
 Localizada em Boa Viagem, ambiente informal.`,
     imagemicone: "img/restaurantes/Visca Burguer/visca burguer.png",
-    imagem1: "img/restaurantes/Visca Burguer/visca burguer1.png",
-    imagem2: "img/restaurantes/Visca Burguer/visca burguer2.png",
+    imagem1: "img/restaurantes/Visca Burguer/viscaburguer1.png",
+    imagem2: "img/restaurantes/Visca Burguer/viscaburguer2.png",
     endereco: "Av. Visc. de Jequitinhonha, 535 - Boa Viagem, Recife - PE, 51021-190" 
   },
   "404-hamburguer": {
-    nome: "404 Hamburguer",
+    nome: "404 Hamburgueria",
     nota: "4.2",
     descricao: `Hambúrgueres criativos com nomes de humor e combinações únicas.
 Ambiente casual, ideal para grupos e jovens.
 Localizado em Tamarineira, perto da Ferreira Costa.`,
-    imagemicone: "img/restaurantes/404 Hamburguer/404 hamburguer.png",
-    imagem1: "img/restaurantes/404 Hamburguer/404 hamburguer1.png",
-    imagem2: "img/restaurantes/404 Hamburguer/404 hamburguer2.png",
+    imagemicone: "img/restaurantes/404 Hamburguer/404 hamburgueria.png",
+    imagem1: "img/restaurantes/404 Hamburguer/404hamburgueria1.png",
+    imagem2: "img/restaurantes/404 Hamburguer/404hamburgueria2.png",
     endereco: "R. Silveira Líra, 102 - Tamarineira, Recife - PE, 52051-010" 
   },
   "nave-burger": {
@@ -186,7 +186,7 @@ Especializada em smash burgers premium e combos criativos.
 Unidade na Torre, bem avaliada pelos locais.`,
     imagemicone: "img/restaurantes/Nave Burger/nave burger.png",
     imagem1: "img/restaurantes/Nave Burger/nave burger1.png",
-    imagem2: "img/restaurantes/Nave Burger/nave burger2.png",
+    imagem2: "img/restaurantes/Nave Burger/nave burger2.jpg",
     endereco: "R. da Hora, 855 - Espinheiro, Recife - PE, 52020-010" 
   },
   "barteco": {
@@ -195,7 +195,7 @@ Unidade na Torre, bem avaliada pelos locais.`,
     descricao: `Bar animado com petiscos variados e drinks especiais.
 Ambiente descontraído, ideal para happy hour com amigos.
 Fica em Iputinga, na Rua do Bom Pastor.`,
-    imagemicone: "img/restaurantes/Barteco/barteco.png",
+    imagemicone: "img/restaurantes/Barteco/barteco.jpg",
     imagem1: "img/restaurantes/Barteco/barteco1.png",
     imagem2: "img/restaurantes/Barteco/barteco2.png",
     endereco: "R. Bom Pastor, 366 - Iputinga, Recife - PE, 50670-260" 
@@ -206,9 +206,9 @@ Fica em Iputinga, na Rua do Bom Pastor.`,
     descricao: `Bar e restaurante com chopp gelado e petiscos clássicos.
 Ambiente acolhedor com happy hour diário.
 Localizado no Prado, próximo ao Hipódromo.`,
-    imagemicone: "img/restaurantes/Jockey 365 Bar/jockey 365 bar.png",
-    imagem1: "img/restaurantes/Jockey 365 Bar/jockey 365 bar1.png",
-    imagem2: "img/restaurantes/Jockey 365 Bar/jockey 365 bar2.png",
+    imagemicone: "img/restaurantes/Jockey 365 Bar/jockey 365 bar.jpg",
+    imagem1: "img/restaurantes/Jockey 365 Bar/jockey 365 bar1.jpg",
+    imagem2: "img/restaurantes/Jockey 365 Bar/jockey 365 bar2.jpg",
     endereco: "R. Carlos Gomes, 640 - Prado, Recife - PE, 50720-110" 
   },
   "bar-do-cuscuz-recife": {
@@ -217,7 +217,7 @@ Localizado no Prado, próximo ao Hipódromo.`,
     descricao: `Bar rústico com foco em culinária nordestina e cuscuz típico.
 Ambiente familiar e acolhedor com pratos regionais.
 Localizado em Boa Viagem, ótimo para refeições leves.`,
-    imagemicone: "img/restaurantes/Bar do Cuscuz Recife/bar do cuscuz recife.png",
+    imagemicone: "img/restaurantes/Bar do Cuscuz Recife/bar do cuscuz.png",
     imagem1: "img/restaurantes/Bar do Cuscuz Recife/bar do cuscuz recife1.png",
     imagem2: "img/restaurantes/Bar do Cuscuz Recife/bar do cuscuz recife2.png",
     endereco: "Av. Fernando Simões Barbosa, 170 - Boa Viagem, Recife - PE, 51020-390"
@@ -239,9 +239,9 @@ Fica na Av. Conselheiro Aguiar, em Boa Viagem.`,
     descricao: `Bar vibrante com temática espanhola e ambiente animado.
 Oferece tapas, petiscos e drinks refrescantes.
 Localizado no Jardim São Paulo, clima descontraído.`,
-    imagemicone: "img/restaurantes/Boteco Ibiza/boteco ibiza.png",
-    imagem1: "img/restaurantes/Boteco Ibiza/boteco ibiza1.png",
-    imagem2: "img/restaurantes/Boteco Ibiza/boteco ibiza2.png",
+    imagemicone: "img/restaurantes/Boteco Ibiza/boteco ibiza.jpg",
+    imagem1: "img/restaurantes/Boteco Ibiza/botecoibiza1.jpg",
+    imagem2: "img/restaurantes/Boteco Ibiza/botecoibiza2.png",
     endereco: "R. Alfredo Rolim, 91 - Jardim São Paulo, Recife - PE, 50781-750" 
   },
   "boteco-365": {
@@ -300,14 +300,14 @@ Unidades em Boa Viagem e Casa Forte.`,
     endereco: "Rua Professor Eduardo Wanderley Filho, 242 - Boa Viagem, Recife - PE, 51020-170" 
   },
     "spazio-burguer-recife": {
-    nome: "Spazio Burguer Recife",
+    nome: "Spazio Burger Recife",
     nota: "4.3",
     descricao: `Hambúrgueres artesanais gourmet num ambiente moderno e acolhedor.
 Combinações sofisticadas com ingredientes selecionados.
 Unidade Torre próxima ao Colégio Santa Maria.`,
-    imagemicone: "img/restaurantes/Spazio Burguer Recife/spazio burguer recife.png",
-    imagem1: "img/restaurantes/Spazio Burguer Recife/spazio burguer recife1.png",
-    imagem2: "img/restaurantes/Spazio Burguer Recife/spazio burguer recife2.png",
+    imagemicone: "img/restaurantes/Spazio Burguer Recife/spazio burger recife.jpg",
+    imagem1: "img/restaurantes/Spazio Burguer Recife/spazioburger1.png",
+    imagem2: "img/restaurantes/Spazio Burguer Recife/spazioburger1.png",
     endereco: "R. Padre Bernadino Pessoa, 374 - Loja 1 - Boa Viagem, Recife - PE, 52051-270" 
   },
   "caldinho-do-nenem": {
@@ -316,9 +316,9 @@ Unidade Torre próxima ao Colégio Santa Maria.`,
     descricao: `Clássico recifense famoso por caldinhos variados saborosos.
 Ambiente simples e acolhedor, ótimo com uma cervejinha.
 Localizado no Pina, referência local gastronômica.`,
-    imagemicone: "img/restaurantes/Caldinho do Neném/caldinho do nenem.png",
-    imagem1: "img/restaurantes/Caldinho do Neném/caldinho do nenem1.png",
-    imagem2: "img/restaurantes/Caldinho do Neném/caldinho do nenem2.png",
+    imagemicone: "img/restaurantes/Caldinho do Neném/caldinho do nenem.jpg",
+    imagem1: "img/restaurantes/Caldinho do Neném/caldinhodonenem1.png",
+    imagem2: "img/restaurantes/Caldinho do Neném/caldinhodonenem2.png",
     endereco: "R. Nogueira de Souza, 375 - Pina, Recife - PE, 51110-110" 
   },
   "parada-obrigatoria": {
@@ -328,8 +328,8 @@ Localizado no Pina, referência local gastronômica.`,
 Perfeito para refeições rápidas com toque familiar.
 Unidade Graças bem localizada e aconchegante.`,
     imagemicone: "img/restaurantes/Parada Obrigatoria/parada obrigatoria.png",
-    imagem1: "img/restaurantes/Parada Obrigatoria/parada obrigatoria1.png",
-    imagem2: "img/restaurantes/Parada Obrigatoria/parada obrigatoria2.png",
+    imagem1: "img/restaurantes/Parada Obrigatoria/parada obrigatoria1.jpg",
+    imagem2: "img/restaurantes/Parada Obrigatoria/parada obrigatoria2.jpg",
     endereco: "R. Cardeal Arcoverde, 315 - Graças, Recife - PE, 52011-240" 
   },
   "yokocho-izakaya": {
@@ -339,8 +339,8 @@ Unidade Graças bem localizada e aconchegante.`,
 Drinks típicos do Japão num ambiente acolhedor e temático.
 Localizado na Torre, estilo “beco japonês” acolhedor.`,
     imagemicone: "img/restaurantes/Yokocho Izakaya/yokocho izakaya.png",
-    imagem1: "img/restaurantes/Yokocho Izakaya/yokocho izakaya1.png",
-    imagem2: "img/restaurantes/Yokocho Izakaya/yokocho izakaya2.png",
+    imagem1: "img/restaurantes/Yokocho Izakaya/yokochoizakaya1.png",
+    imagem2: "img/restaurantes/Yokocho Izakaya/yokochoizakaya2.png",
     endereco: "R. Padre Anchieta, 291 - Torre, Recife - PE, 50710-430" 
   }
 };
