@@ -1,128 +1,3 @@
-const params = new URLSearchParams(window.location.search);
-const restauranteId = params.get('id');
-
-const restaurantes = {
-  "coco-bambu": {
-    nome: "Coco Bambu",
-    nota: "4.9",
-    descricao: `Marisqueira com pratos generosos e ambiente elegante. Ideal para ocasiões especiais e jantares em grupo.
-Oferece pratos fartos, com destaque para frutos do mar e moquecas. Ambiente sofisticado com atendimento de qualidade.
-Possui espaço kids, carta de vinhos e áreas climatizadas.`,
-   imagemicone: "img/restaurantes/Coco Bambu/cocobambu.png", 
-    imagem1: "img/restaurantes/Coco Bambu/cocobambu1.png",
-    imagem2: "img/restaurantes/Coco Bambu/cocobambu2.png",
-    endereco: "Av. Gov. Agamenon Magalhães, 2132 - Derby, Recife - PE, 52010-075"
-  },
-  "chica-pitanga": {
-    nome: "Chica Pitanga",
-    nota: "4.8",
-    descricao: `Sabores regionais em ambiente acolhedor. Um dos self-services mais tradicionais de Boa Viagem.
-Grande variedade de pratos nordestinos e contemporâneos com ótimo custo-benefício.`,
-    imagemicone: "img/restaurantes/Chica Pitanga/chicapitanga.png", 
-    imagem1: "img/restaurantes/Chica Pitanga/chicapitanga1.png",
-    imagem2: "img/restaurantes/Chica Pitanga/chicapitanga2.png",
-    endereco: "R. Petrolina, 19 - Boa Viagem, Recife - PE, 51021-250"
-  },
-  "sal-e-brasa": {
-    nome: "Sal e Brasa",
-    nota: "4.9",
-    descricao: `Rodízio de carnes premium e ótimo buffet de saladas, massas e sobremesas.
-Ambiente espaçoso e ideal para eventos em família. Atendimento ágil e cortes nobres.`,
-    imagemicone: "img/restaurantes/Sal e Brasa/sal e brasa.png", 
-    imagem1: "img/restaurantes/Sal e Brasa/salebrasa1.png",
-    imagem2: "img/restaurantes/Sal e Brasa/salebrasa2.png",
-    endereco: "Av. Pres. Dutra, 451 - Ibura, Recife - PE, 51200-235"
-  },
-  "bode-do-no": {
-    nome: "Bode do Nô",
-    nota: "4.7",
-    descricao: `Comida nordestina autêntica com aquele toque caseiro. Destaque para pratos com carne de bode, sarapatel e feijão verde.
-Ambiente simples e muito acolhedor.`,
-    imagemicone: "img/restaurantes/Bode do Nô/bode do no.png", 
-    imagem1: "img/restaurantes/Bode do Nô/bodedono1.png",
-    imagem2: "img/restaurantes/Bode do Nô/bodedono2.png",
-    endereco: "Rua Dr. João Guilherme Pontes Sobrinho, 245 - Boa Viagem, Recife - PE, 51021-090"
-  },
-  "restaurante-leite": {
-    nome: "Restaurante Leite",
-    nota: "4.6",
-    descricao: `O clássico de Recife, tradição e pratos refinados. Fundado em 1882, é o restaurante mais antigo do Brasil em atividade.
-Foco em culinária portuguesa com ambiente elegante.`,
-    imagemicone: "img/restaurantes/Restaurante Leite/restaurante leite.jpg", 
-    imagem1: "img/restaurantes/Restaurante Leite/restauranteleite1.png",
-    imagem2: "img/restaurantes/Restaurante Leite/restauranteleite2.png",
-    endereco: "Praça Joaquim Nabuco, 147 - Santo Antônio, Recife - PE, 50010-480"
-  },
-  "casa-da-parrilla": {
-    nome: "Casa da Parrilla",
-    nota: "4.5",
-    descricao: `Churrasco argentino com cortes selecionados e acompanhamentos especiais.
-Ambiente rústico e sofisticado, ideal para apreciadores de carne.`,
-    imagemicone: "img/restaurantes/Casa da Parrilla/casa da parrilla.jpg", 
-    imagem1: "img/restaurantes/Casa da Parrilla/casadaparrilla1.png",
-    imagem2: "img/restaurantes/Casa da Parrilla/casadaparrilla2.png",
-    endereco: "Estr. de Belém, n672 - Encruzilhada, Recife - PE, 52031-000"
-  },
-  "geracao-burguer": {
-    nome: "Geração Burguer",
-    nota: "4.4",
-    descricao: `Hambúrgueres artesanais e milkshakes incríveis em um ambiente retrô.
-Cardápio variado com opções para todos os gostos, incluindo vegetarianos.`,
-    imagemicone: "img/restaurantes/Geração Burguer/geraçao burguer.png", 
-    imagem1: "img/restaurantes/Geração Burguer/geraçaoburguer1.png",
-    imagem2: "img/restaurantes/Geração Burguer/geraçaoburguer2.png",
-    endereco: "Km 9.8, 8986, Estr. de Aldeia - Vera Cruz, Camaragibe - PE, 54786-013"
-  },
-  "la-brasa": {
-    nome: "La Brasa",
-    nota: "4.5",
-    descricao: `Steakhouse com cortes maturados e ambiente sofisticado.
-Atendimento de alto padrão e carta de vinhos selecionada.`,
-    imagemicone: "img/restaurantes/La Brasa/la brasa.png", 
-    imagem1: "img/restaurantes/La Brasa/labrasa1.png",
-    imagem2: "img/restaurantes/La Brasa/labrasa2.png",
-    endereco: "R. Santo Elías, 49 - Espinheiro, Recife - PE, 52020-095"
-  },
-  "mafalda-hamburgueria": {
-    nome: "Mafalda Hamburgueria",
-    nota: "4.3",
-    descricao: `Receitas criativas e sabores surpreendentes. Destaque para os molhos artesanais e burgers com nomes divertidos.
-Ambiente jovem e descontraído.`,
-    imagemicone: "img/restaurantes/Mafalda Hamburgueria/mafalda hamburgueria.png", 
-    imagem1: "img/restaurantes/Mafalda Hamburgueria/mafaldahamburgueria1.PNG",
-    imagem2: "img/restaurantes/Mafalda Hamburgueria/mafaldahamburgueria2.PNG",
-    endereco: "Estr. Real do Poço, 97 - Poço da Panela, Recife - PE, 52061-200"
-  },
-  "magalhaes-pizza": {
-    nome: "Magalhães Pizza",
-    nota: "4.4",
-    descricao: `Pizzas finas e crocantes com ingredientes premium. Ideal para famílias e casais.
-Massas artesanais e bom atendimento.`,
-    imagemicone: "img/restaurantes/Magalhães Pizza/magalhaes pizza.png", 
-    imagem1: "img/restaurantes/Magalhães Pizza/magalhaespizza1.png",
-    imagem2: "img/restaurantes/Magalhães Pizza/magalhaespizza2.png",
-    endereco: "R. Fernando Ferrari, 59 - Ipsep, Recife - PE, 51190-170"
-  },
-  "lupi-pizzeria": {
-    nome: "Lupi Pizzeria",
-    nota: "4.5",
-    descricao: `Tradição italiana com forno a lenha e massa leve. Sabores autênticos e ambiente moderno.
-Destaque para a pizza de burrata e o tiramisù.`,
-    imagemicone: "img/restaurantes/Lupi Pizzeria/lupi pizzeria.jpg", 
-    imagem1: "img/restaurantes/Lupi Pizzeria/lupipizzeria1.png",
-    imagem2: "img/restaurantes/Lupi Pizzeria/lupipizzeria2.png",
-    endereco: "R. José Domingues da Silva, 238 - Boa Viagem, Recife - PE, 51030-070"
-  },
-  "1121-forneria": {
-    nome: "1121 Forneria",
-    nota: "4.4",
-    descricao: `Forneria contemporânea com pães artesanais quentinhos e pizzas de fermentação natural.
-Ambiente charmoso e ideal para encontros românticos.`,
-    imagemicone: "img/restaurantes/1121 Forneria/1121forneria.png", 
-    imagem1: "img/restaurantes/1121 Forneria/1121forneria1.png",
-    imagem2: "img/restaurantes/1121 Forneria/1121forneria2.png",
-    endereco: "Av. Conselheiro Aguiar, 323 - Boa Viagem, Recife - PE, 51110-131"
-  },
   "hamburgrill": {
     nome: "Hamburgrill",
     nota: "4.2",
@@ -140,9 +15,9 @@ Localizada em Poço da Panela, ambiente descolado.`,
     descricao: `Hambúrgueres artesanais com ingredientes frescos e molhos especiais.
 Ambiente jovem e familiar, ideal para lanche e almoço descontraído.
 Unidade Boa Viagem na Av. Domingos Ferreira.`,
-    imagemicone: "img/restaurantes/Laça Burguer/laça burguer.png",
-    imagem1: "img/restaurantes/Laça Burguer/laçaburguer1.png",
-    imagem2: "img/restaurantes/Laça Burguer/laçaburguer2.png",
+    imagemicone: "img/restaurantes/Laca Burguer/laça burguer.png",
+    imagem1: "img/restaurantes/Laca Burguer/laçaburguer1.png",
+    imagem2: "img/restaurantes/Laca Burguer/laçaburguer2.png",
     endereco: "Av. Eng. Domingos Ferreira, 3742 - Boa Viagem, Recife - PE, 51030-020" 
   },
   "232-burguer": {
@@ -184,9 +59,9 @@ Localizado em Tamarineira, perto da Ferreira Costa.`,
     descricao: `Hamburgueria com temática espacial e ambiente divertido.
 Especializada em smash burgers premium e combos criativos.
 Unidade na Torre, bem avaliada pelos locais.`,
-    imagemicone: "img/restaurantes/Nave Burguer/nave burguer.png",
-    imagem1: "img/restaurantes/Nave Burguer/naveburguer1.png",
-    imagem2: "img/restaurantes/Nave Burguer/naveburguer2.jpg",
+    imagemicone: "img/restaurantes/Nave Burger/nave burger.png",
+    imagem1: "img/restaurantes/Nave Burger/naveburger1.png",
+    imagem2: "img/restaurantes/Nave Burger/naveburger2.jpg",
     endereco: "R. da Hora, 855 - Espinheiro, Recife - PE, 52020-010" 
   },
   "barteco": {
@@ -218,8 +93,8 @@ Localizado no Prado, próximo ao Hipódromo.`,
 Ambiente familiar e acolhedor com pratos regionais.
 Localizado em Boa Viagem, ótimo para refeições leves.`,
     imagemicone: "img/restaurantes/Bar do Cuscuz Recife/bar do cuscuz.png",
-    imagem1: "img/restaurantes/Bar do Cuscuz Recife/bardocuscuz1.jpg",
-    imagem2: "img/restaurantes/Bar do Cuscuz Recife/bardocuscuz2.jpg",
+    imagem1: "img/restaurantes/Bar do Cuscuz Recife/bardocuscuzrecife1.png",
+    imagem2: "img/restaurantes/Bar do Cuscuz Recife/bardocuscuzrecife2.png",
     endereco: "Av. Fernando Simões Barbosa, 170 - Boa Viagem, Recife - PE, 51020-390"
   },
   "barchef-boteco": {
@@ -305,20 +180,20 @@ Unidades em Boa Viagem e Casa Forte.`,
     descricao: `Hambúrgueres artesanais gourmet num ambiente moderno e acolhedor.
 Combinações sofisticadas com ingredientes selecionados.
 Unidade Torre próxima ao Colégio Santa Maria.`,
-    imagemicone: "img/restaurantes/Spazio Burguer Recife/spazio burger.jpg",
+    imagemicone: "img/restaurantes/Spazio Burguer Recife/spazio burger recife.jpg",
     imagem1: "img/restaurantes/Spazio Burguer Recife/spazioburger1.png",
-    imagem2: "img/restaurantes/Spazio Burguer Recife/spazioburger2.png",
+    imagem2: "img/restaurantes/Spazio Burguer Recife/spazioburger1.png",
     endereco: "R. Padre Bernadino Pessoa, 374 - Loja 1 - Boa Viagem, Recife - PE, 52051-270" 
   },
-  "caldinho-do-nenen": {
-    nome: "Caldinho do Nenen",
+  "caldinho-do-nenem": {
+    nome: "Caldinho do Neném",
     nota: "4.7",
     descricao: `Clássico recifense famoso por caldinhos variados saborosos.
 Ambiente simples e acolhedor, ótimo com uma cervejinha.
 Localizado no Pina, referência local gastronômica.`,
-    imagemicone: "img/restaurantes/Caldinho do Nenen/caldinho do nenen.jpg",
-    imagem1: "img/restaurantes/Caldinho do Nenen/caldinhodonenen1.png",
-    imagem2: "img/restaurantes/Caldinho do Nenen/caldinhodonenen2.png",
+    imagemicone: "img/restaurantes/Caldinho do Neném/caldinho do nenen.jpg",
+    imagem1: "img/restaurantes/Caldinho do Neném/caldinhodonenen1.png",
+    imagem2: "img/restaurantes/Caldinho do Neném/caldinhodonenen2.png",
     endereco: "R. Nogueira de Souza, 375 - Pina, Recife - PE, 51110-110" 
   },
   "parada-obrigatoria": {
@@ -332,7 +207,7 @@ Unidade Graças bem localizada e aconchegante.`,
     imagem2: "img/restaurantes/Parada Obrigatoria/paradaobrigatoria2.jpg",
     endereco: "R. Cardeal Arcoverde, 315 - Graças, Recife - PE, 52011-240" 
   },
-  "yokocho-izakaya": {
+    "yokocho-izakaya": {
     nome: "Yokocho Izakaya",
     nota: "4.8",
     descricao: `Izakaya com petiscos e pratos japoneses autênticos.
@@ -343,22 +218,3 @@ Localizado na Torre, estilo “beco japonês” acolhedor.`,
     imagem2: "img/restaurantes/Yokocho Izakaya/yokochoizakaya2.png",
     endereco: "R. Padre Anchieta, 291 - Torre, Recife - PE, 50710-430" 
   }
-};
-
-console.log("ID do restaurante na URL:", restauranteId);
-
-const dados = restaurantes[restauranteId];
-
-if (dados) {
-  document.getElementById("restaurante-nome").textContent = dados.nome.toUpperCase();
-  document.getElementById("restaurante-nota").textContent = "⭐ " + dados.nota;
-  document.getElementById("restaurante-descricao").textContent = dados.descricao;
-
-  document.getElementById("restaurante-imagemicone").src = dados.imagemicone;
-  document.getElementById("restaurante-imagem1").src = dados.imagem1;
-  document.getElementById("restaurante-imagem2").src = dados.imagem2;
-
-  const enderecoLink = document.getElementById("restaurante-endereco");
-  enderecoLink.textContent = dados.endereco;
-  enderecoLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dados.endereco)}`;
-}

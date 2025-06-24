@@ -21,11 +21,11 @@ jockey 365 bar V
 bar do cuscuz recife
 barchef boteco V
 boteco ibiza V
-boteco 365
-tatu bola recife
-maverick garage
-all bar
-beerdock
+boteco 365 V
+tatu bola recife V
+maverick garage V
+all bar V
+beerdock V
 caldinho do nenen V
 spazio burguer recife V
 parada obrigatoria V

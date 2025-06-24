@@ -85,6 +85,73 @@ body {
   color: #ffa4a4;
 }
 
+.recomendacao-dia {
+  background-color: #fff7f0;
+  padding: 60px 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 60px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-recomendacao {
+  font-family: 'Lilita One', cursive;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: #ED3630;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.recomendacao-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.recomendacao-conteudo img {
+  width: 480px;
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recomendacao-conteudo .texto {
+  max-width: 500px;
+}
+
+.recomendacao-conteudo h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.recomendacao-conteudo p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #b82e38;
+}
+
 p {
   font-size: 20px;
 }
@@ -282,7 +349,7 @@ p {
 .linha h3 {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 50px;
     font-style: normal;
     padding-top: 0;
     margin-bottom: 0;
@@ -309,4 +376,23 @@ p {
     height: 500px;
     object-fit: cover;
     border-radius: 3%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
