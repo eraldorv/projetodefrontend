@@ -1,220 +1,33 @@
-  "hamburgrill": {
-    nome: "Hamburgrill",
-    nota: "4.2",
-    descricao: `Hamburgueria com vibe rock’n’roll e decoração alternativa.
-Serve burgers grelhados suculentos, molhos artesanais e porções.
-Localizada em Poço da Panela, ambiente descolado.`,
-    imagemicone: "img/restaurantes/Hamburgrill/hamburgrill.png",
-    imagem1: "img/restaurantes/Hamburgrill/hamburgrill1.png",
-    imagem2: "img/restaurantes/Hamburgrill/hamburgrill2.png",
-    endereco: "Av. Eng. Domingos Ferreira, 1000 - Pina, Recife - PE, 51011-050" 
-  },
-  "laca-burguer": {
-    nome: "Laça Burguer",
-    nota: "4.1",
-    descricao: `Hambúrgueres artesanais com ingredientes frescos e molhos especiais.
-Ambiente jovem e familiar, ideal para lanche e almoço descontraído.
-Unidade Boa Viagem na Av. Domingos Ferreira.`,
-    imagemicone: "img/restaurantes/Laca Burguer/laça burguer.png",
-    imagem1: "img/restaurantes/Laca Burguer/laçaburguer1.png",
-    imagem2: "img/restaurantes/Laca Burguer/laçaburguer2.png",
-    endereco: "Av. Eng. Domingos Ferreira, 3742 - Boa Viagem, Recife - PE, 51030-020" 
-  },
-  "232-burguer": {
-    nome: "232 Burguer",
-    nota: "4.3",
-    descricao: `Hamburgueria urbana com receitas exclusivas e smash burgers.
-Oferece combos, delivery e retirada no local.
-Instalada na Torre, próximo ao centro histórico.`,
-    imagemicone: "img/restaurantes/232 Burguer/232 burguer.png",
-    imagem1: "img/restaurantes/232 Burguer/232burguer1.png",
-    imagem2: "img/restaurantes/232 Burguer/232burguer2.png",
-    endereco: "R. Ascendino Neves, 29 - Torre, Recife - PE, 50710-070" 
-  },
-  "visca-burguer": {
-    nome: "Visca Burguer",
-    nota: "4.0",
-    descricao: `Hamburgueria temática inspirada na cultura espanhola.
-Serve burgers saborosos e petiscos em ambiente descontraído.
-Localizada em Boa Viagem, ambiente informal.`,
-    imagemicone: "img/restaurantes/Visca Burguer/visca burguer.png",
-    imagem1: "img/restaurantes/Visca Burguer/viscaburguer1.png",
-    imagem2: "img/restaurantes/Visca Burguer/viscaburguer2.png",
-    endereco: "Av. Visc. de Jequitinhonha, 535 - Boa Viagem, Recife - PE, 51021-190" 
-  },
-  "404-hamburguer": {
-    nome: "404 Hamburgueria",
-    nota: "4.2",
-    descricao: `Hambúrgueres criativos com nomes de humor e combinações únicas.
-Ambiente casual, ideal para grupos e jovens.
-Localizado em Tamarineira, perto da Ferreira Costa.`,
-    imagemicone: "img/restaurantes/404 Hamburguer/404 hamburgueria.png",
-    imagem1: "img/restaurantes/404 Hamburguer/404hamburgueria1.png",
-    imagem2: "img/restaurantes/404 Hamburguer/404hamburgueria2.png",
-    endereco: "R. Silveira Líra, 102 - Tamarineira, Recife - PE, 52051-010" 
-  },
-  "nave-burger": {
-    nome: "Nave Burger",
-    nota: "4.3",
-    descricao: `Hamburgueria com temática espacial e ambiente divertido.
-Especializada em smash burgers premium e combos criativos.
-Unidade na Torre, bem avaliada pelos locais.`,
-    imagemicone: "img/restaurantes/Nave Burger/nave burger.png",
-    imagem1: "img/restaurantes/Nave Burger/naveburger1.png",
-    imagem2: "img/restaurantes/Nave Burger/naveburger2.jpg",
-    endereco: "R. da Hora, 855 - Espinheiro, Recife - PE, 52020-010" 
-  },
-  "barteco": {
-    nome: "Barteco",
-    nota: "4.5",
-    descricao: `Bar animado com petiscos variados e drinks especiais.
-Ambiente descontraído, ideal para happy hour com amigos.
-Fica em Iputinga, na Rua do Bom Pastor.`,
-    imagemicone: "img/restaurantes/Barteco/barteco.jpg",
-    imagem1: "img/restaurantes/Barteco/barteco1.png",
-    imagem2: "img/restaurantes/Barteco/barteco2.png",
-    endereco: "R. Bom Pastor, 366 - Iputinga, Recife - PE, 50670-260" 
-  },
-  "jockey-365-bar": {
-    nome: "Jockey 365 Bar",
-    nota: "4.6",
-    descricao: `Bar e restaurante com chopp gelado e petiscos clássicos.
-Ambiente acolhedor com happy hour diário.
-Localizado no Prado, próximo ao Hipódromo.`,
-    imagemicone: "img/restaurantes/Jockey 365 Bar/jockey 365 bar.jpg",
-    imagem1: "img/restaurantes/Jockey 365 Bar/jockey365bar1.jpg",
-    imagem2: "img/restaurantes/Jockey 365 Bar/jockey365bar2.jpg",
-    endereco: "R. Carlos Gomes, 640 - Prado, Recife - PE, 50720-110" 
-  },
-  "bar-do-cuscuz-recife": {
-    nome: "Bar do Cuscuz Recife",
-    nota: "4.7",
-    descricao: `Bar rústico com foco em culinária nordestina e cuscuz típico.
-Ambiente familiar e acolhedor com pratos regionais.
-Localizado em Boa Viagem, ótimo para refeições leves.`,
-    imagemicone: "img/restaurantes/Bar do Cuscuz Recife/bar do cuscuz.png",
-    imagem1: "img/restaurantes/Bar do Cuscuz Recife/bardocuscuzrecife1.png",
-    imagem2: "img/restaurantes/Bar do Cuscuz Recife/bardocuscuzrecife2.png",
-    endereco: "Av. Fernando Simões Barbosa, 170 - Boa Viagem, Recife - PE, 51020-390"
-  },
-  "barchef-boteco": {
-    nome: "Barchef Boteco",
-    nota: "4.4",
-    descricao: `Boteco moderno com petiscos gourmet e drinks criativos.
-Ambiente charmoso, perfeito para happy hour.
-Fica na Av. Conselheiro Aguiar, em Boa Viagem.`,
-    imagemicone: "img/restaurantes/Barchef Boteco/barchef boteco.png",
-    imagem1: "img/restaurantes/Barchef Boteco/barchefboteco1.png",
-    imagem2: "img/restaurantes/Barchef Boteco/barchefboteco2.png",
-    endereco: "Av. Conselheiro Aguiar, 2814 - Boa Viagem, Recife - PE, 51020-020" 
-  },
-  "boteco-ibiza": {
-    nome: "Boteco Ibiza",
-    nota: "4.3",
-    descricao: `Bar vibrante com temática espanhola e ambiente animado.
-Oferece tapas, petiscos e drinks refrescantes.
-Localizado no Jardim São Paulo, clima descontraído.`,
-    imagemicone: "img/restaurantes/Boteco Ibiza/boteco ibiza.jpg",
-    imagem1: "img/restaurantes/Boteco Ibiza/botecoibiza1.jpg",
-    imagem2: "img/restaurantes/Boteco Ibiza/botecoibiza2.png",
-    endereco: "R. Alfredo Rolim, 91 - Jardim São Paulo, Recife - PE, 50781-750" 
-  },
-  "boteco-365": {
-    nome: "Boteco 365",
-    nota: "4.2",
-    descricao: `Boteco eclético com petiscos variados e bebidas.
-Ambiente acolhedor ideal para encontros informais.
-Funciona o dia todo, situado na Madalena.`,
-    imagemicone: "img/restaurantes/Boteco 365/boteco 365.jpg",
-    imagem1: "img/restaurantes/Boteco 365/boteco3651.jpg",
-    imagem2: "img/restaurantes/Boteco 365/boteco3652.jpg",
-    endereco: "R. Benfica, 505 - Madalena, Recife - PE, 50720-001" 
-  },
-  "tatu-bola-recife": {
-    nome: "Tatu Bola Recife",
-    nota: "4.6",
-    descricao: `Bar rústico-chic com decoração temática e música ao vivo.
-Famoso por drinks elaborados e petiscos criativos.
-Localizado de frente ao mar, no Pina.`,
-    imagemicone: "img/restaurantes/Tatu Bola Recife/tatu bola.jpg",
-    imagem1: "img/restaurantes/Tatu Bola Recife/tatubola1.jpg",
-    imagem2: "img/restaurantes/Tatu Bola Recife/tatubola2.jpg",
-    endereco: "Av. Herculano Bandeira, 21 - Pina, Recife - PE, 51011-000" 
-  },
-  "maverick-garage": {
-    nome: "Maverick Garage",
-    nota: "4.0",
-    descricao: `Bar temático de carros e rock’n’roll com vibe alternativa.
-Serve hambúrgueres e cervejas artesanais geladas.
-Localizado nos Aflitos, ponto alternativo e cultural.`,
-    imagemicone: "img/restaurantes/Maverick Garage/maverick garage.jpg",
-    imagem1: "img/restaurantes/Maverick Garage/maverickgarage1.png",
-    imagem2: "img/restaurantes/Maverick Garage/maverickgarage2.jpg",
-    endereco: "Rua Manuel de Carvalho, 481 - Aflitos, Recife - PE, 52050-370" 
-  },
-  "all-bar": {
-    nome: "All Bar",
-    nota: "4.1",
-    descricao: `Bar versátil com petiscos, pratos e drinks variados.
-Ambiente acolhedor, ideal para diferentes ocasiões.
-Localizado no Espinheiro, clima charmoso e descontraído.`,
-    imagemicone: "img/restaurantes/All Bar/all bar.jpg",
-    imagem1: "img/restaurantes/All Bar/allbar1.png",
-    imagem2: "img/restaurantes/All Bar/allbar2.png",
-    endereco: "R. Barão de Itamaracá, 10 - Espinheiro, Recife - PE, 52020-070" 
-  },
-  "beerdock": {
-    nome: "Beerdock",
-    nota: "4.5",
-    descricao: `Hub de cervejas artesanais com grande variedade de rótulos.
-Acompanha petiscos pensados para harmonização.
-Unidades em Boa Viagem e Casa Forte.`,
-    imagemicone: "img/restaurantes/Beerdock/beerdock.jpg",
-    imagem1: "img/restaurantes/Beerdock/beerdock1.png",
-    imagem2: "img/restaurantes/Beerdock/beerdock2.png",
-    endereco: "Rua Professor Eduardo Wanderley Filho, 242 - Boa Viagem, Recife - PE, 51020-170" 
-  },
-    "spazio-burguer-recife": {
-    nome: "Spazio Burger Recife",
-    nota: "4.3",
-    descricao: `Hambúrgueres artesanais gourmet num ambiente moderno e acolhedor.
-Combinações sofisticadas com ingredientes selecionados.
-Unidade Torre próxima ao Colégio Santa Maria.`,
-    imagemicone: "img/restaurantes/Spazio Burguer Recife/spazio burger recife.jpg",
-    imagem1: "img/restaurantes/Spazio Burguer Recife/spazioburger1.png",
-    imagem2: "img/restaurantes/Spazio Burguer Recife/spazioburger1.png",
-    endereco: "R. Padre Bernadino Pessoa, 374 - Loja 1 - Boa Viagem, Recife - PE, 52051-270" 
-  },
-  "caldinho-do-nenem": {
-    nome: "Caldinho do Neném",
-    nota: "4.7",
-    descricao: `Clássico recifense famoso por caldinhos variados saborosos.
-Ambiente simples e acolhedor, ótimo com uma cervejinha.
-Localizado no Pina, referência local gastronômica.`,
-    imagemicone: "img/restaurantes/Caldinho do Neném/caldinho do nenen.jpg",
-    imagem1: "img/restaurantes/Caldinho do Neném/caldinhodonenen1.png",
-    imagem2: "img/restaurantes/Caldinho do Neném/caldinhodonenen2.png",
-    endereco: "R. Nogueira de Souza, 375 - Pina, Recife - PE, 51110-110" 
-  },
-  "parada-obrigatoria": {
-    nome: "Parada Obrigatória",
-    nota: "4.0",
-    descricao: `Restaurante de comida caseira em ambiente acolhedor.
-Perfeito para refeições rápidas com toque familiar.
-Unidade Graças bem localizada e aconchegante.`,
-    imagemicone: "img/restaurantes/Parada Obrigatoria/parada obrigatoria.png",
-    imagem1: "img/restaurantes/Parada Obrigatoria/paradaobrigatoria1.jpg",
-    imagem2: "img/restaurantes/Parada Obrigatoria/paradaobrigatoria2.jpg",
-    endereco: "R. Cardeal Arcoverde, 315 - Graças, Recife - PE, 52011-240" 
-  },
-    "yokocho-izakaya": {
-    nome: "Yokocho Izakaya",
-    nota: "4.8",
-    descricao: `Izakaya com petiscos e pratos japoneses autênticos.
-Drinks típicos do Japão num ambiente acolhedor e temático.
-Localizado na Torre, estilo “beco japonês” acolhedor.`,
-    imagemicone: "img/restaurantes/Yokocho Izakaya/yokocho izakaya.png",
-    imagem1: "img/restaurantes/Yokocho Izakaya/yokochoizakaya1.png",
-    imagem2: "img/restaurantes/Yokocho Izakaya/yokochoizakaya2.png",
-    endereco: "R. Padre Anchieta, 291 - Torre, Recife - PE, 50710-430" 
-  }
+coco-bambu: Coco Bambu - https://www.instagram.com/cocobamburecife
+chica-pitanga: Chica Pitanga - https://www.instagram.com/chicapitangarecife
+sal-e-brasa: Sal e Brasa - https://www.instagram.com/salebrasa.recife
+bode-do-no: Bode do Nô - https://www.instagram.com/bodedono
+restaurante-leite: Restaurante Leite - https://www.instagram.com/restauranteleite
+casa-da-parrilla: Casa da Parrilla - https://www.instagram.com/casadaparrilla
+geracao-burguer: Geração Burguer - https://www.instagram.com/geracaoburguer
+la-brasa: La Brasa - https://www.instagram.com/labrasaburger.recife
+mafalda-hamburgueria: Mafalda Hamburgueria - https://www.instagram.com/mafaldahamburgueria
+magalhaes-pizza: Magalhães Pizza - https://www.instagram.com/magalhaespizza
+lupi-pizzeria: Lupi Pizzeria - https://www.instagram.com/lupipizzeria 
+1121-forneria: 1121 Forneria - https://www.instagram.com/forneria1121
+hamburgrill: Hamburgrill - https://www.instagram.com/hamburgrillbr
+laca-burguer: Laça Burguer - https://www.instagram.com/lacaburguer
+232-burguer: 232 Burguer - https://www.instagram.com/232burguer
+visca-burguer: Visca Burguer - https://www.instagram.com/viscaburguer
+404-hamburguer: 404 Hamburgueria - https://www.instagram.com/404burger
+nave-burger: Nave Burger - https://www.instagram.com/naveburgers
+barteco: Barteco - https://www.instagram.com/barteco_pe
+jockey-365-bar: Jockey 365 Bar - https://www.instagram.com/jockey365_oficial
+bar-do-cuscuz-recife: Bar do Cuscuz Recife -  https://www.instagram.com/bardocuscuzrecife
+barchef-boteco: Barchef Boteco - https://www.instagram.com/barchef.boteco
+boteco-ibiza: Boteco Ibiza - https://www.instagram.com/botecoibiza
+boteco-365: Boteco 365 - https://www.instagram.com/boteco365
+tatu-bola-recife: Tatu Bola Recife - https://www.instagram.com/tatubola.recifepe
+maverick-garage: Maverick Garage - https://www.instagram.com/mvkgarage
+all-bar: All Bar - https://www.instagram.com/allbar.espinheiro
+beerdock: Beerdock - https://www.instagram.com/beerdock_recife
+spazio-burguer-recife: Spazio Burger Recife - https://www.instagram.com/spazioburger.br
+caldinho-do-nenen: Caldinho do Nenen - https://www.instagram.com/caldinhodonenen.oficial
+parada-obrigatoria: Parada Obrigatória - https://www.instagram.com/paradaobrigatoriaburgerhouse
+yokocho-izakaya: Yokocho Izakaya - https://www.instagram.com/yokocho.izakaya
+
